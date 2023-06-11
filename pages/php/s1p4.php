@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -24,15 +23,36 @@
 
 <main>
 
-	<h1>- Base de donnée -</h1>
+	<h1>- Instruction echo / date et // commentaire php -</h1>
 
 	<section class="bulle mar">
-		<h2>PHP</h2>
+		<h2>Concevez votre site web avec PHP et MySQL | segment 1 partie 4</h2>
 
-			<ul>
-				<li><a href="pages/php/s1p4.php">Instruction echo / date et // commentaire php</a></li>
-				<li><a href="pages/php/s2p1.php">Appeler une variables / Calculs</a></li>
-			</ul>
+			<h3>L'instruction echo :</h3>
+				<img src="../../images/s1p4.jpg"><br><br>
+
+	<!-- On peut écrire une instruction echo avec ou sans parenthèses -->       
+            <?php echo("On peut écrire une instruction echo avec"); ?>
+            <?php echo "ou sans parenthèses!"; ?><br><br>
+
+            <?php echo "Pour afficher des \"guillemet\" dans echo on place un back-slash devant.";?>
+
+
+        <p>
+            Cette ligne a été écrite entièrement en HTML.<br/>
+            <?php echo "Celle-ci en php mais a l'intérieur d'une balise html P";?><br>
+            On peut aussi demander à echo d'afficher une autre instruction comme date : 
+            <?php echo date("d/m/Y h:i:s")?><br>
+            On peut moduler la date comme on veux!<br><br>
+
+            Les commentaire en php ont deux formes : <br>
+            - les commentaires momoligne : // commentaire<br>
+            - les commentaires multilignes : /* commentaire */
+        </p>
+
+
+
+			
 
 	</section>
 

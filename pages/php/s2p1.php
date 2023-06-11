@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -24,17 +23,54 @@
 
 <main>
 
-	<h1>- Base de donnée -</h1>
+	<h1>- Appeler une variables / Calculs -</h1>
 
 	<section class="bulle mar">
-		<h2>PHP</h2>
+		<h2>Concevez votre site web avec PHP et MySQL | segment 2 partie 1</h2>
 
-			<ul>
-				<li><a href="pages/php/s1p4.php">Instruction echo / date et // commentaire php</a></li>
-				<li><a href="pages/php/s2p1.php">Appeler une variables / Calculs</a></li>
-			</ul>
+			<h3> Appeler une variables </h3>
+			<img src="../../images/s2p11.jpg"><br><br>
 
-	</section>
+
+		Elle est formée d'un $ + "nom de la variable" espace = espace "valeur de la variable" ;	<br><br>
+			<?php $name = 'Nico'?>
+			<?php $userAge = 31;?>
+
+		On peut afficher la valeur de la variable avec echo : <br>
+		Il s'appel <?php echo $name;?> et il à <?php echo $userAge;?>ans.<br><br>
+
+		On peut aussi utiliser la concaténation : <br>
+		-avec guillement double :  <?php echo "Il s'appel $name et il à $userAge ans.";?><br><br>
+
+		-avec guillemet simple (apostrophe) : <?php echo 'Il s\'appel ' . $name . ' et il à ' . $userAge . 'ans.';?><br><br>
+
+
+
+
+			<h3> Calculs </h3>
+			<img src="../../images/s2p12.jpg"><br><br>
+
+		Faire des calculs entre les valeurs des variables grace à + - * / et ( modulo % )<br><br>
+
+		<?php 
+			$val1 = 10;
+			$val2 = 2;
+			$val3 = $val1 * $val2;
+		?>
+
+		<?php echo $val3;?><br>
+		<?php echo $val3 / $val1;?><br>
+		<?php echo ($val1 + $val2) / $val3;?>
+
+
+
+
+
+
+
+			
+
+	</section><br><br>
 
 </main>
 
