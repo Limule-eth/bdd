@@ -1,0 +1,35 @@
+
+body{
+	background-image: repeating-linear-gradient(315deg, rgba(0,0,0,0.04) 0px, rgba(0,0,0,0.04) 2px,transparent 2px, transparent 4px),linear-gradient(315deg, rgba(255,255,255, 0.22),rgba(255,255,255, 0.41));	
+	background-attachment: fixed;
+	font-family: open sans;
+	margin: 0px;
+}
+
+h1{
+	text-align: center;
+	font-size: 2.25em;
+	font-family: 'alkatra';
+	color: #D89C23;
+	margin: 27px 3% 27px 3%;
+}
+
+h2{
+	display: inline-block;
+	font-size: 1.6em;
+	font-family: alkatra;
+	color: white;
+	background-color: rgba(216, 156, 35, 0.8);
+	padding: 0px 10px 0px 10px;
+	border-radius: 5px;
+	margin-bottom: 15px;
+}
+
+.mar{margin: 0px 15% 0px 15%}
+
+.bulle{
+	padding: 15px;
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px rgba(48, 48, 48, 0.5);
+}
