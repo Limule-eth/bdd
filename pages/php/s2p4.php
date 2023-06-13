@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -24,20 +23,43 @@
 
 <main>
 
-	<h1>- Base de donnée -</h1>
+	<h1>- Organiser les données dans un tableau -</h1>
 
 	<section class="bulle mar">
-		<h2>PHP</h2>
+		<h2>Concevez votre site web avec PHP et MySQL | segment 2 partie 4</h2><br><br>
 
-			<ul>
-				<li><a href="pages/php/s1p4.php">Instruction echo / date et // commentaire php</a></li>
-				<li><a href="pages/php/s2p1.php">Appeler une variables / Calculs</a></li>
-				<li><a href="pages/php/s2p2.php">Les conditions if else / switch case</a></li>
-				<li><a href="pages/php/s2p3.php">Les boucles while for et les tableaux</a></li>
-				<li><a href="pages/php/s2p4.php">Organiser les données dans un tableau</a></li>
-			</ul>
 
-	</section>
+		
+
+
+
+
+
+	
+
+
+
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+
+	</section><br><br>
 
 </main>
 
