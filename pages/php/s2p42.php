@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -24,23 +23,72 @@
 
 <main>
 
-	<h1>- Base de donnée -</h1>
+	<h1>- Cas pratrique -</h1>
 
 	<section class="bulle mar">
-		<h2>PHP</h2>
+		<h2>Concevez votre site web avec PHP et MySQL | segment 2 partie 4</h2><br><br>
+			<img src="../../images/s2p411.jpg"><br><br>
 
-			<ul>
-				<li><a href="pages/php/s1p4.php">Instruction echo / date et // commentaire php</a></li>
-				<li><a href="pages/php/s2p1.php">Appeler une variables / Calculs</a></li>
-				<li><a href="pages/php/s2p2.php">Les conditions if else / switch case</a></li>
-				<li><a href="pages/php/s2p3.php">Les boucles while for et les tableaux</a></li>
-				<li><a href="pages/php/s2p4.php">Organiser les données dans un tableau / boucles for, foreach, print_r</a></li>
-				<li><a href="pages/php/s2p41.php">Recherche dans un tableau : array_key_exists in_array array_search</a></li>
-				<li><a href="pages/php/s2p42.php">Cas pratique</a></li>
-				<li><a href="pages/php/s2p5.php">Les fonctions</a></li>
-			</ul>
 
-	</section>
+	<!-- Créer un tableau associatif
+		Afficher les ARTICLES seulement si 'allowed' = true -->
+
+		<?php $pizza = [
+			[
+				'titre' => 'Margarita',
+				'recette' => 'tomate, mozza',
+				'auteur' => 'André24',
+				'allowed' => true,
+			],
+			[
+				'titre' => 'Chèvre',
+				'recette' => 'chèvre, miel, noix, olive',
+				'auteur' => 'Martindu72',
+				'allowed' => false,
+			],
+			[
+				'titre' => 'Royale',
+				'recette' => 'tomate, jambon, olive',
+				'auteur' => 'PatrickLeBg',
+				'allowed' => true,
+			], ]; ?>
+
+	<div>
+		<h4>Affichage pizza</h4>
+
+		<?php foreach($pizza as $liste): ?>
+
+			<?php if ($liste['allowed'] == true): ?>
+
+				<article>
+					<h3><?php echo $liste['titre']; ?></h3>
+					<div><?php echo $liste['recette']; ?></div>
+					<i><?php echo $liste['auteur']; ?></i>
+				</article>
+
+			<?php endif; ?>
+
+		<?php endforeach ?>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+	</div>		
+
+		
+
+
+		
+
+	</section><br><br>
 
 </main>
 

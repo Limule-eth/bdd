@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -24,23 +23,119 @@
 
 <main>
 
-	<h1>- Base de donnée -</h1>
+	<h1>- Les fonctions -</h1>
 
 	<section class="bulle mar">
-		<h2>PHP</h2>
+		<h2>Concevez votre site web avec PHP et MySQL | segment 2 partie 5</h2><br><br>
+			
 
-			<ul>
-				<li><a href="pages/php/s1p4.php">Instruction echo / date et // commentaire php</a></li>
-				<li><a href="pages/php/s2p1.php">Appeler une variables / Calculs</a></li>
-				<li><a href="pages/php/s2p2.php">Les conditions if else / switch case</a></li>
-				<li><a href="pages/php/s2p3.php">Les boucles while for et les tableaux</a></li>
-				<li><a href="pages/php/s2p4.php">Organiser les données dans un tableau / boucles for, foreach, print_r</a></li>
-				<li><a href="pages/php/s2p41.php">Recherche dans un tableau : array_key_exists in_array array_search</a></li>
-				<li><a href="pages/php/s2p42.php">Cas pratique</a></li>
-				<li><a href="pages/php/s2p5.php">Les fonctions</a></li>
-			</ul>
+	<h3>strlen</h3>
 
-	</section>
+		<p>strlen compte le nombre de caractère (espace compris).</p>
+			<img src="../../images/s2p5.jpg"><br><br>
+
+		<?php 
+			$recette = 'la pizza c\'est délicieu!!!';
+			$nbr = strlen($recette);
+
+			echo "La phrase ci dessus comporte $nbr caractères.";
+		?>
+
+	<h3>créer une fonction</h3>
+		<img src="../../images/s2p51.jpg"><br><br>
+
+	<?php $pizza = [
+			[
+				'titre' => 'Margarita',
+				'recette' => 'tomate, mozza',
+				'auteur' => 'André24',
+				'allowed' => true,
+			],
+			[
+				'titre' => 'Chèvre',
+				'recette' => 'chèvre, miel, noix, olive',
+				'auteur' => 'Martindu72',
+				'allowed' => false,
+			],
+			[
+				'titre' => 'Royale',
+				'recette' => 'tomate, jambon, olive',
+				'auteur' => 'PatrickLeBg',
+				'allowed' => true,
+			], ]; ?>
+
+
+		<?php function isAllowed(array $reci) : string
+			{
+				if ($reci['allowed'] == true) {
+					$test = 'oui';
+				}
+
+				else {$test = 'non';}
+
+				return $test;
+
+			} ?>
+
+			<?php echo isAllowed($pizza[0]);?><br><br>
+
+	<h4>Exemple concret</h4><br><br>
+		<img src="../../images/s2p52.jpg"><br><br>
+
+	<!-- Récupérer les recettes valides -->
+
+		
+	
+
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<?php $pizza = [
+			[
+				'titre' => 'Margarita',
+				'recette' => 'tomate, mozza',
+				'auteur' => 'André24',
+				'allowed' => true,
+			],
+			[
+				'titre' => 'Chèvre',
+				'recette' => 'chèvre, miel, noix, olive',
+				'auteur' => 'Martindu72',
+				'allowed' => false,
+			],
+			[
+				'titre' => 'Royale',
+				'recette' => 'tomate, jambon, olive',
+				'auteur' => 'PatrickLeBg',
+				'allowed' => true,
+			], ]; ?>
+
+			
+
+
+
+
+
+
+
+
+	</section><br><br>
 
 </main>
 
