@@ -84,7 +84,95 @@
 
 	<!-- Récupérer les recettes valides -->
 
-		
+
+	<?php foreach($pizza as $elem)
+		if (isAllowed($elem) == 'oui') {
+		 	echo $elem['titre'] . ' <br> ';
+		 	echo $elem['recette'] . ' <br> ';
+		 	echo $elem['auteur'] . ' <br><br> ';
+		 } ?><br><br>
+
+
+		<img src="../../images/s2p53.jpg"><br>
+
+<!-- Relier l'e-mail associé à un compte utilisateur à l'e-mail utilisé pour la contribution d'une recette.
+		 	  Boucler sur les recettes valides.
+			  Prendre l'e-mail.
+			  Boucler sur les utilisateurs de la plateforme.
+			  Si les e-mails correspondent, prendre le nom.
+			  Sinon, continuer à parcourir la liste des utilisateurs. -->
+
+<?php
+
+	$users = [
+	    [
+	        'full_name' => 'Mickaël Andrieu',
+	        'email' => 'mickael.andrieu@exemple.com',
+	        'age' => 34,
+	    ],
+	    [
+	        'full_name' => 'Mathieu Nebra',
+	        'email' => 'mathieu.nebra@exemple.com',
+	        'age' => 34,
+	    ],
+	    [
+	        'full_name' => 'Laurène Castor',
+	        'email' => 'laurene.castor@exemple.com',
+	        'age' => 28,
+	    ], ];
+
+	$recipes = [
+	    [
+	        'title' => 'Cassoulet',
+	        'recipe' => '...',
+	        'author' => 'mickael.andrieu@exemple.com',
+	        'allowed' => true,
+	    ],
+	    [
+	        'title' => 'Couscous',
+	        'recipe' => '...',
+	        'author' => 'mickael.andrieu@exemple.com',
+	        'allowed' => false,
+	    ],
+	    [
+	        'title' => 'Escalope milanaise',
+	        'recipe' => '...',
+	        'author' => 'mathieu.nebra@exemple.com',
+	        'allowed' => true,
+	    ],
+	    [
+	        'title' => 'Salade Romaine',
+	        'recipe' => '...',
+	        'author' => 'laurene.castor@exemple.com',
+	        'allowed' => false,
+	    ], ]; ?>
+
+
+
+<?php  function auteurAge(string $emailAuteur, array $user) {
+	for ($i=0; $i < count($user); $i++) { 
+		$auteur = $user[$i];
+
+		if ($emailAuteur === $auteur['email']) {
+			return $auteur['full_name'] . ' (' . $auteur['age'] . ' ans)';
+		} } } ?>
+
+
+
+
+	    <?php foreach($recipes as $elem)
+		if (isAllowed($elem) == 'oui') {
+		 	echo $elem['title'] . ' <br> ';
+		 	echo auteurAge($elem['author'], $users) . ' <br><br> ';
+		 } ?><br><br>
+
+<!-- ou -->
+
+
+
+
+	
+
 	
 
 

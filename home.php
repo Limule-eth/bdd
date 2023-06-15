@@ -38,6 +38,7 @@
 				<li><a href="pages/php/s2p41.php">Recherche dans un tableau : array_key_exists in_array array_search</a></li>
 				<li><a href="pages/php/s2p42.php">Cas pratique</a></li>
 				<li><a href="pages/php/s2p5.php">Les fonctions</a></li>
+				<li><a href="pages/php/s2p6.php">Test</a></li>
 			</ul>
 
 	</section>
